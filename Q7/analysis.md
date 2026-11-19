@@ -1,0 +1,3 @@
+# Q7 – Student Council Election
+
+Requirements: accept up to 12 candidates and 500,000 votes; count votes in one pass; classify candidate IDs outside 1..candidate_count as invalid; print valid/invalid totals, descending candidate results, winner and tie status. A count array gives O(v+c) counting time and O(c) space. Sorting the at-most-12 result records costs O(c²) with insertion sort (negligible at this bound). The program includes a small hand-checkable sample with invalid IDs and a tie. Extend input to scanf/fgets or a file for large-scale tests; record actual timings locally rather than claiming fabricated benchmark values.
