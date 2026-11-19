@@ -1,0 +1,3 @@
+# Q3 – Merging Two Merit Lists
+
+Merge two descending sorted arrays with two indices. At each step compare the current heads and copy the larger score. When one input ends, append the remainder of the other. Each element is copied once; comparisons are at most m+n−1. Time O(m+n), output space O(m+n). Joining then sorting costs O((m+n)log(m+n)) with a comparison sort. A stable merge can preserve campus order for equal scores by consistently choosing the left input on equality (the supplied implementation does this). In-place merging can save the output array but typically requires shifts and may cost O(mn) with a simple method.
