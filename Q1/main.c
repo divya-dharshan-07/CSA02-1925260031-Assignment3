@@ -10,14 +10,14 @@ static long linear_search(const int a[], size_t n, int key, size_t *comparisons)
     return -1;
 }
 static long binary_search(const int a[], size_t n, int key, size_t *comparisons) {
-    size_t low = 0, high = n;
+    long low = 0, high = (long)n - 1;
     *comparisons = 0;
-    while (low < high) {
-        size_t mid = low + (high - low) / 2;
+    while (low <= high) {
+        long mid = low + (high - low) / 2;
         ++*comparisons;
-        if (a[mid] == key) return (long)mid;
+        if (a[mid] == key) return mid;
         if (a[mid] < key) low = mid + 1;
-        else high = mid;
+        else high = mid - 1;
     }
     return -1;
 }
