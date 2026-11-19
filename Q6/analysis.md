@@ -1,0 +1,3 @@
+# Q6 – Directory of Names
+
+Names are fixed-width character arrays terminated by '\\0'. strcmp compares byte values until a mismatch or terminator; therefore uppercase and lowercase can sort differently in the C locale. After sorting, duplicates are adjacent and can be found in one linear pass. Binary search requires the sorted order. Sorting names by insertion sort is O(n²) comparisons in the worst case, with string comparisons costing up to O(L); swapping/copying names moves up to L bytes. Sorting an index or pointer array reduces data movement but requires extra index/pointer storage and indirection. A qsort comparator for pointers can sort in O(n log n) comparisons, each up to O(L).
