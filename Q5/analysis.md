@@ -1,0 +1,3 @@
+# Q5 – Processing Text Without the Library
+
+The null character '\\0' marks the end of a C string and is not part of the visible text. Word counting tracks transitions from whitespace to non-whitespace; this implementation uses isspace so tabs and newlines also separate words. Cache the string length if it is needed repeatedly: calling strlen in every loop condition can make a loop O(n²), while one pass is O(n). char s[]="OK" creates a modifiable array; char *s="OK" points to a string literal and modifying it is undefined behaviour. strcpy into a too-small destination overflows; prefer bounded input with fgets and checked formatting. gets was removed because it cannot limit input length. Recursive reversal uses O(n) stack; iterative reversal uses O(1) extra space.
