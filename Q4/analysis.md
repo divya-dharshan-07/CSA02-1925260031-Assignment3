@@ -1,0 +1,3 @@
+# Q4 – Two-Dimensional Rainfall Records
+
+C stores a two-dimensional array in row-major order. For rain[38][12], the address of rain[i][j] is base + (i×12+j)×sizeof(double) (or sizeof the declared element type). Row-wise traversal accesses contiguous memory and usually has better cache locality than column-wise traversal. A 3-D extension is rain[years][districts][months], with offset ((year×districts)+district)×months+month. A flat array using i×12+j has O(1) access and equivalent contiguous layout. An array of row pointers adds pointer storage and may allocate rows separately, reducing locality. The executable uses a hand-checkable 3×4 sample; adapt dimensions to 38×12 for the full dataset.
