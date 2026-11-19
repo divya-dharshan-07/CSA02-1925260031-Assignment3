@@ -1,29 +1,24 @@
-# C Programming – Assignment 3
-
+# C Programming – Assignment 3 (CO3)
 **Student:** Divya Dharshan  
 **Register Number:** 1925260031  
-**Programme:** B.Tech – Artificial Intelligence and Machine Learning  
-**Institution:** SIMATS Engineering  
-**Compiler:** Record the exact GCC version using `gcc --version`.
-
-## Coverage
-Arrays, searching, sorting, merging, strings, algorithm design, complexity analysis, experiments, and the Election Counting Design Challenge.
-
-## Structure
-Create folders Q1 through Q7. Each question folder should contain its C source, required input/data files, analysis, and genuine output evidence.
+**Programme:** B.Tech AIML | **Institution:** SIMATS Engineering  
+**Compiler:** GCC (run `gcc --version` and record your installed version).
 
 ## Build and run
-From the relevant question folder in PowerShell:
-
+Open the relevant question folder in VS Code terminal:
 ```powershell
-gcc -std=c11 -Wall -Wextra -Wpedantic main.c -o main.exe
-.\\main.exe
+gcc -std=c11 -Wall -Wextra -pedantic main.c -o main.exe
+.\main.exe
 ```
+For each Q folder, use the same command. Save a screenshot of the actual terminal output as `output.png` in that folder after running locally.
 
-Use the actual source filename where it differs from `main.c`. Record the exact compiler version and command used.
+## Questions
+- **Q1:** Linear and binary search; comparison counters and complexity.
+- **Q2:** Bubble, selection and insertion sort; comparisons/moves across input orders.
+- **Q3:** Stable descending merge of two sorted merit lists.
+- **Q4:** Two-dimensional rainfall calculations and row-major memory layout.
+- **Q5:** Character-array word count, palindrome, upper-case and reversal.
+- **Q6:** Sort/search a resident-name directory and detect duplicates.
+- **Q7:** Election vote counting, invalid votes, ranking and tie detection.
 
-## Evidence
-Run each program locally. Do not substitute estimated timings, operation counts, outputs, or screenshots for measured evidence. Clearly distinguish predictions and theoretical complexity from actual measurements.
-
-## Status
-Repository setup started. Add each question implementation against its full task statement and any supplied starter-code/TODO block.
+Each folder includes a C implementation and analysis notes. Complete the required larger-scale experiments, graphs and additional evidence locally. Do not report invented timings or screenshots. Assignment 3 is pair work: both partners must understand and execute every question in their own repositories.
